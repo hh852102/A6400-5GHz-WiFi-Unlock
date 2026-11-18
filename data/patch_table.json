@@ -1,0 +1,49 @@
+{
+  "model": "ILCE-6400",
+  "firmware": "38111_03.2019052701",
+  "kernel": "Linux 3.0.27_nl-rt106+ armv7l",
+  "target_file": "/usr/lib/libNetService.so",
+  "file_size": 682040,
+  "stock_sha256": "1557bfa2c3e205e33089a4114001a5e32c55b6a2327656c0b11872e71bbd3d09",
+  "target_sha256": "0739a734868376b5976ea7ef30719643955490943323985ad73f9c94c71159ef",
+  "changed_bytes": 6,
+  "note": "All 6 single-byte offsets reside in page 0x5f000 (0x01 -> 0x02, band=1 -> band=2).",
+  "offsets": [
+    {
+      "offset": "0x5f220",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwnerForMulti -> NsMiscSetGOBand"
+    },
+    {
+      "offset": "0x5f272",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwnerForMulti -> NsMiscIsSupportChannel"
+    },
+    {
+      "offset": "0x5f282",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwnerForMulti -> NsMiscRandomSelectFreq"
+    },
+    {
+      "offset": "0x5f56a",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwner -> NsMiscSetGOBand"
+    },
+    {
+      "offset": "0x5f5bc",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwner -> NsMiscIsSupportChannel"
+    },
+    {
+      "offset": "0x5f5cc",
+      "before": "0x01",
+      "after": "0x02",
+      "role": "NsP2PStartGroupOwner -> NsMiscRandomSelectFreq"
+    }
+  ]
+}
